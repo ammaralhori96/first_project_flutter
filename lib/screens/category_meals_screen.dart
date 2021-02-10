@@ -1,3 +1,4 @@
+import '../widgets/meal_item.dart';
 import '../models/meal.dart';
 import 'package:flutter/material.dart';
 import '../dummy_data.dart';
@@ -27,10 +28,17 @@ class _Category_meals_screenState extends State<Category_meals_screen> {
       body: Container(
         child: ListView.builder(
           itemBuilder: (ctx, index) {
-            return Text(
-              categoryMeals[index].title,
-              style: TextStyle(color: Colors.black),
-            );
+            return MealItem(
+                duration: categoryMeals[index].duration,
+                title: categoryMeals[index].title,
+                imageUrl: categoryMeals[index].imageUrl,
+                complexity: categoryMeals[index].complexity,
+                affordability: categoryMeals[index].affordability);
+
+            // Text(
+            //   categoryMeals[index].title,
+            //   style: TextStyle(color: Colors.black),
+            // );
           },
           itemCount: categoryMeals.length,
         ),
