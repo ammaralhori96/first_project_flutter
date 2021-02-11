@@ -29,6 +29,7 @@ class _Category_meals_screenState extends State<Category_meals_screen> {
         child: ListView.builder(
           itemBuilder: (ctx, index) {
             return MealItem(
+                id: categoryMeals[index].id,
                 duration: categoryMeals[index].duration,
                 title: categoryMeals[index].title,
                 imageUrl: categoryMeals[index].imageUrl,
