@@ -1,8 +1,7 @@
-import './screens/meal_deatil.dart';
-
-import './screens/category_meals_screen.dart';
-import './screens/categorys_screen.dart';
 import 'package:flutter/material.dart';
+import './screens/meal_deatil.dart';
+import './screens/category_meals_screen.dart';
+import 'screens/tabs_screen.dart';
 
 main() => runApp(MyApp());
 
@@ -30,7 +29,7 @@ class MyApp extends StatelessWidget {
               ))),
       //home: MyHomePage(),
       routes: {
-        '/': (context) => CategoryesScreen(),
+        '/': (context) => Tabs_screen(),
         Category_meals_screen.routeName: (context) => Category_meals_screen(),
         MealDeatil.routeName: (context) => MealDeatil(),
       },

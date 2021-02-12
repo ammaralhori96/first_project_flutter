@@ -1,5 +1,6 @@
-import 'package:first_project_flutter/dummy_data.dart';
 import 'package:flutter/material.dart';
+
+import 'package:first_project_flutter/dummy_data.dart';
 
 class MealDeatil extends StatelessWidget {
   static const routeName = "mealDeatil";
@@ -59,15 +60,16 @@ class MealDeatil extends StatelessWidget {
           buildSectionTitle(context, "Steps"),
           buildContiner(
             ListView.builder(
-              itemBuilder: (ctx, index) => Column(children: [ListTile(
-                leading: CircleAvatar(
-                  child: Text("# ${index+1}"),
-                ),
-                title: Text(mealSelected.steps[index]),
-              ),
-              Divider()
-              ],
-              
+              itemBuilder: (ctx, index) => Column(
+                children: [
+                  ListTile(
+                    leading: CircleAvatar(
+                      child: Text("# ${index + 1}"),
+                    ),
+                    title: Text(mealSelected.steps[index]),
+                  ),
+                  Divider()
+                ],
               ),
               itemCount: mealSelected.steps.length,
             ),
