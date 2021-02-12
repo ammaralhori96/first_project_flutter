@@ -1,3 +1,4 @@
+import '../widgets/main_drawer.dart';
 import 'package:flutter/material.dart';
 import '../screens/categorys_screen.dart';
 
@@ -45,6 +46,7 @@ class _Tabs_screenState extends State<Tabs_screen> {
           ),
         ],
       ),
+      drawer: MainDrwer() ,
     );
   }
 }
