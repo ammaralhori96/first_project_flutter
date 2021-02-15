@@ -44,10 +44,10 @@ class MainDrwer extends StatelessWidget {
           height: 20,
         ),
         drwerItem("Meal", Icons.restaurant, () {
-          Navigator.of(context).pushNamed("/");
+          Navigator.of(context).pushReplacementNamed("/");
         }),
         drwerItem("filtres", Icons.settings, () {
-          Navigator.of(context).pushNamed(FilterScreen.routeName);
+          Navigator.of(context).pushReplacementNamed(FilterScreen.routeName);
         }),
       ],
     ));
