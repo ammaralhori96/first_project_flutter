@@ -58,7 +58,6 @@ class _Category_meals_screenState extends State<Category_meals_screen> {
               imageUrl: desplayedMeals[index].imageUrl,
               complexity: desplayedMeals[index].complexity,
               affordability: desplayedMeals[index].affordability,
-              removeItem: _removeMail,
             );
 
             // Text(
